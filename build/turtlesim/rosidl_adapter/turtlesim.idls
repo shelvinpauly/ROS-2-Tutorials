@@ -1,8 +1,0 @@
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
-/home/sln/beginner_tutorials/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl

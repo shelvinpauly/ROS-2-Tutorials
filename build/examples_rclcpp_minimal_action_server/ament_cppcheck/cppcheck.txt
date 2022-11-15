@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/actions/minimal_action_server':
- - /home/sln/ros2_humble/install/ament_cppcheck/bin/ament_cppcheck --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_action_server/test_results/examples_rclcpp_minimal_action_server/cppcheck.xunit.xml
-
-No problems found
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_action_server/test_results/examples_rclcpp_minimal_action_server/cppcheck.xunit.xml'

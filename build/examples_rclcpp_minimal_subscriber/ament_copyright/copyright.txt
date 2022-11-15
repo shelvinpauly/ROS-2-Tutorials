@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/topics/minimal_subscriber':
- - /home/sln/ros2_humble/install/ament_copyright/bin/ament_copyright --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_subscriber/test_results/examples_rclcpp_minimal_subscriber/copyright.xunit.xml
-
-No problems found, checked 10 files
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_subscriber/test_results/examples_rclcpp_minimal_subscriber/copyright.xunit.xml'

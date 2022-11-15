@@ -1,1 +1,0 @@
-/home/sln/beginner_tutorials/src/examples/rclpy/services/minimal_service/setup.py

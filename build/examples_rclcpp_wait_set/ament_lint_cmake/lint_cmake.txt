@@ -1,9 +1,0 @@
--- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/wait_set':
- - /home/sln/ros2_humble/install/ament_lint_cmake/bin/ament_lint_cmake --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml
-
-
-No problems found
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml'

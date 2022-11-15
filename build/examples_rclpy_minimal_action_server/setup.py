@@ -1,1 +1,0 @@
-/home/sln/beginner_tutorials/src/examples/rclpy/actions/minimal_action_server/setup.py
