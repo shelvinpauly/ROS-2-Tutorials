@@ -1,0 +1,46 @@
+[6.422s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build
+[7.347s] running develop
+[7.611s] Removing /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples-rclpy-minimal-client.egg-link (link to .)
+[8.921s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build
+[8.924s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/services/minimal_client': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_client build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed
+[10.401s] running egg_info
+[10.402s] writing ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/PKG-INFO
+[10.402s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/dependency_links.txt
+[10.402s] writing entry points to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/entry_points.txt
+[10.403s] writing requirements to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/requires.txt
+[10.403s] writing top-level names to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/top_level.txt
+[10.454s] reading manifest file '../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[10.455s] writing manifest file '../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[10.455s] running build
+[10.455s] running build_py
+[10.455s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build
+[10.455s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib
+[10.456s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.456s] copying examples_rclpy_minimal_client/client_async_callback.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.456s] copying examples_rclpy_minimal_client/__init__.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.456s] copying examples_rclpy_minimal_client/client_async.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.456s] copying examples_rclpy_minimal_client/client_async_member_function.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.456s] copying examples_rclpy_minimal_client/client.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client
+[10.457s] running install
+[10.460s] running install_lib
+[10.461s] creating /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.461s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async_callback.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.462s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/__init__.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.462s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.462s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client_async_member_function.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.462s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build/lib/examples_rclpy_minimal_client/client.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client
+[10.467s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client/client_async_callback.py to client_async_callback.cpython-38.pyc
+[10.469s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client/__init__.py to __init__.cpython-38.pyc
+[10.469s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client/client_async.py to client_async.cpython-38.pyc
+[10.469s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client/client_async_member_function.py to client_async_member_function.cpython-38.pyc
+[10.470s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client/client.py to client.cpython-38.pyc
+[10.470s] running install_data
+[10.471s] running install_egg_info
+[10.477s] Copying ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client-0.15.1-py3.8.egg-info
+[10.478s] running install_scripts
+[10.530s] Installing client script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.530s] Installing client_async script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.530s] Installing client_async_callback script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.530s] Installing client_async_member_function script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.531s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log'
+[10.575s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/services/minimal_client' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_client build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed

@@ -1,0 +1,20 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /home/sln/beginner_tutorials/build/launch_testing_examples/.pytest_cache
+rootdir: /home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples
+plugins: launch-testing-ros-0.19.3, launch-pytest-1.0.3, launch-testing-1.0.3, ament-xmllint-0.12.4, ament-pep257-0.12.4, ament-mypy-0.12.4, ament-flake8-0.12.4, ament-copyright-0.12.4, ament-lint-0.12.4, rerunfailures-8.0, repeat-0.9.1, timeout-1.3.3, cov-2.8.1, mock-1.10.4, colcon-core-0.10.0
+[1mcollecting ... [0m[1m
+collecting 1 item                                                              [0m[1m
+collected 9 items                                                              [0m
+
+launch_testing_examples/check_msgs_launch_test.py [32m.[0m[36m                      [ 11%][0m
+launch_testing_examples/check_multiple_nodes_launch_test.py [32m.[0m[36m            [ 22%][0m
+launch_testing_examples/check_node_launch_test.py [32m.[0m[36m                      [ 33%][0m
+launch_testing_examples/hello_world_launch_test.py [32m.[0m[36m                     [ 44%][0m
+launch_testing_examples/record_rosbag_launch_test.py [32m.[0m[36m                   [ 55%][0m
+launch_testing_examples/set_param_launch_test.py [32m.[0m[36m                       [ 66%][0m
+test/test_copyright.py [32m.[0m[36m                                                 [ 77%][0m
+test/test_flake8.py [32m.[0m[36m                                                    [ 88%][0m
+test/test_pep257.py [32m.[0m[36m                                                    [100%][0m
+- generated xml file: /home/sln/beginner_tutorials/build/launch_testing_examples/pytest.xml -
+[33m[1m==================== 9 passed, 1 warnings in 17.30 seconds =====================[0m

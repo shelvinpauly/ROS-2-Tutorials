@@ -1,0 +1,27 @@
+[5.293s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build
+[6.955s] running develop
+[8.469s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build
+[8.472s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/services/minimal_client': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_client build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed
+[10.266s] running egg_info
+[10.268s] writing ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/PKG-INFO
+[10.268s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/dependency_links.txt
+[10.268s] writing entry points to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/entry_points.txt
+[10.269s] writing requirements to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/requires.txt
+[10.269s] writing top-level names to ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/top_level.txt
+[10.350s] reading manifest file '../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[10.352s] writing manifest file '../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info/SOURCES.txt'
+[10.352s] running build
+[10.353s] running build_py
+[10.353s] running install
+[10.358s] running install_lib
+[10.365s] running install_data
+[10.366s] running install_egg_info
+[10.372s] removing '/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client-0.15.1-py3.8.egg-info' (and everything under it)
+[10.373s] Copying ../../../../../build/examples_rclpy_minimal_client/examples_rclpy_minimal_client.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages/examples_rclpy_minimal_client-0.15.1-py3.8.egg-info
+[10.374s] running install_scripts
+[10.434s] Installing client script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.434s] Installing client_async script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.435s] Installing client_async_callback script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.435s] Installing client_async_member_function script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/examples_rclpy_minimal_client
+[10.436s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log'
+[10.495s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/services/minimal_client' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_client build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_client --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_client/install.log --single-version-externally-managed

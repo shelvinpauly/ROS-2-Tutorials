@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/actions/minimal_action_server':
+ - /home/sln/ros2_humble/install/ament_uncrustify/bin/ament_uncrustify --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_action_server/test_results/examples_rclcpp_minimal_action_server/uncrustify.xunit.xml
+
+No code style divergence in file 'member_functions.cpp'
+
+No code style divergence in file 'not_composable.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_action_server/test_results/examples_rclcpp_minimal_action_server/uncrustify.xunit.xml'

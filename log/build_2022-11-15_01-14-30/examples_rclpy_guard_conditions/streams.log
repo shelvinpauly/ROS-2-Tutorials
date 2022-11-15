@@ -1,0 +1,24 @@
+[6.514s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/build
+[8.029s] running develop
+[9.245s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/build
+[9.248s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/guard_conditions': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_guard_conditions build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions --record /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/install.log --single-version-externally-managed
+[10.964s] running egg_info
+[10.965s] writing ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/PKG-INFO
+[10.966s] writing dependency_links to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/dependency_links.txt
+[10.966s] writing entry points to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/entry_points.txt
+[10.966s] writing requirements to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/requires.txt
+[10.966s] writing top-level names to ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/top_level.txt
+[11.049s] reading manifest file '../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/SOURCES.txt'
+[11.050s] writing manifest file '../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info/SOURCES.txt'
+[11.051s] running build
+[11.051s] running build_py
+[11.051s] running install
+[11.056s] running install_lib
+[11.062s] running install_data
+[11.063s] running install_egg_info
+[11.070s] removing '/home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages/examples_rclpy_guard_conditions-0.15.1-py3.8.egg-info' (and everything under it)
+[11.070s] Copying ../../../../build/examples_rclpy_guard_conditions/examples_rclpy_guard_conditions.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages/examples_rclpy_guard_conditions-0.15.1-py3.8.egg-info
+[11.071s] running install_scripts
+[11.127s] Installing trigger_guard_condition script to /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/examples_rclpy_guard_conditions
+[11.128s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/install.log'
+[11.282s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/guard_conditions' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_guard_conditions build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_guard_conditions --record /home/sln/beginner_tutorials/build/examples_rclpy_guard_conditions/install.log --single-version-externally-managed

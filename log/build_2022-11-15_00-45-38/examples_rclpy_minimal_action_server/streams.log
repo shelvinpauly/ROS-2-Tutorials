@@ -1,0 +1,50 @@
+[8.276s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build
+[10.074s] running develop
+[10.519s] Removing /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples-rclpy-minimal-action-server.egg-link (link to .)
+[10.969s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build
+[10.972s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/actions/minimal_action_server': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed
+[12.408s] running egg_info
+[12.409s] writing ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/PKG-INFO
+[12.409s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/dependency_links.txt
+[12.409s] writing entry points to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/entry_points.txt
+[12.409s] writing requirements to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/requires.txt
+[12.409s] writing top-level names to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/top_level.txt
+[12.410s] reading manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[12.410s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[12.410s] running build
+[12.415s] running build_py
+[12.416s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build
+[12.416s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib
+[12.417s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.417s] copying examples_rclpy_minimal_action_server/server_queue_goals.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.417s] copying examples_rclpy_minimal_action_server/server_single_goal.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.418s] copying examples_rclpy_minimal_action_server/server_not_composable.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.418s] copying examples_rclpy_minimal_action_server/__init__.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.418s] copying examples_rclpy_minimal_action_server/server_defer.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.418s] copying examples_rclpy_minimal_action_server/server.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server
+[12.419s] running install
+[12.419s] running install_lib
+[12.419s] creating /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.419s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_queue_goals.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.420s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_single_goal.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.420s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_not_composable.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.420s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/__init__.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.420s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server_defer.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.420s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build/lib/examples_rclpy_minimal_action_server/server.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server
+[12.421s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/server_queue_goals.py to server_queue_goals.cpython-38.pyc
+[12.429s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/server_single_goal.py to server_single_goal.cpython-38.pyc
+[12.429s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/server_not_composable.py to server_not_composable.cpython-38.pyc
+[12.429s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/__init__.py to __init__.cpython-38.pyc
+[12.429s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/server_defer.py to server_defer.cpython-38.pyc
+[12.430s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server/server.py to server.cpython-38.pyc
+[12.430s] running install_data
+[12.430s] running install_egg_info
+[12.430s] Copying ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages/examples_rclpy_minimal_action_server-0.15.1-py3.8.egg-info
+[12.431s] running install_scripts
+[12.436s] Installing server script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[12.437s] Installing server_defer script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[12.437s] Installing server_not_composable script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[12.437s] Installing server_queue_goals script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[12.438s] Installing server_single_goal script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[12.438s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/install.log'
+[12.581s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/actions/minimal_action_server' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_action_server --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed

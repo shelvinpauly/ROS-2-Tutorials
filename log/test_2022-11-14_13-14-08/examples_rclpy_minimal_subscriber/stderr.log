@@ -1,0 +1,6 @@
+
+[33m=============================== warnings summary ===============================[0m
+/usr/lib/python3/dist-packages/pydocstyle/config.py:6
+  Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html

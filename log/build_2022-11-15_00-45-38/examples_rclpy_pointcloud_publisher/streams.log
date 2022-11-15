@@ -1,0 +1,34 @@
+[4.188s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build
+[5.494s] running develop
+[5.752s] Removing /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples-rclpy-pointcloud-publisher.egg-link (link to .)
+[5.775s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build
+[5.778s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/topics/pointcloud_publisher': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher --record /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed
+[6.619s] running egg_info
+[6.619s] writing ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/PKG-INFO
+[6.619s] writing dependency_links to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/dependency_links.txt
+[6.620s] writing entry points to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/entry_points.txt
+[6.620s] writing requirements to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/requires.txt
+[6.620s] writing top-level names to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/top_level.txt
+[6.662s] reading manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[6.663s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[6.663s] running build
+[6.663s] running build_py
+[6.663s] creating /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build
+[6.663s] creating /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib
+[6.664s] creating /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[6.664s] copying examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[6.664s] copying examples_rclpy_pointcloud_publisher/__init__.py -> /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[6.664s] running install
+[6.666s] running install_lib
+[6.667s] creating /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher
+[6.667s] copying /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher
+[6.667s] copying /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/__init__.py -> /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher
+[6.670s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py to pointcloud_publisher.cpython-38.pyc
+[6.671s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher/__init__.py to __init__.cpython-38.pyc
+[6.671s] running install_data
+[6.672s] running install_egg_info
+[6.676s] Copying ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages/examples_rclpy_pointcloud_publisher-0.15.1-py3.8.egg-info
+[6.677s] running install_scripts
+[6.708s] Installing pointcloud_publisher script to /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/examples_rclpy_pointcloud_publisher
+[6.708s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/install.log'
+[6.737s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/topics/pointcloud_publisher' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_pointcloud_publisher --record /home/sln/beginner_tutorials/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed

@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+ - /home/sln/ros2_humble/install/ament_uncrustify/bin/ament_uncrustify --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml
+
+No code style divergence in file 'lambda.cpp'
+
+No code style divergence in file 'member_function.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml'

@@ -1,0 +1,110 @@
+[0.141s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer': AMENT_PREFIX_PATH=/home/sln/beginner_tutorials/install/examples_rclcpp_minimal_timer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sln/beginner_tutorials/install/examples_rclcpp_minimal_timer:${CMAKE_PREFIX_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.242s] UpdateCTestConfiguration  from :/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/CTestConfiguration.ini
+[0.242s] Parse Config file:/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/CTestConfiguration.ini
+[0.242s]    Site: sln-Lenovo-Y520-15IKBN
+[0.242s]    Build name: (empty)
+[0.243s]  Add coverage exclude regular expressions.
+[0.243s] SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+[0.243s] Create new tag: 20221115-0537 - Experimental
+[0.243s] UpdateCTestConfiguration  from :/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/CTestConfiguration.ini
+[0.243s] Parse Config file:/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/CTestConfiguration.ini
+[0.243s] Test project /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer
+[0.243s] Constructing a list of tests
+[0.243s] Done constructing a list of tests
+[0.244s] Updating test list for fixtures
+[0.244s] Added 0 tests to meet fixture requirements
+[0.244s] Checking test dependency graph...
+[0.244s] Checking test dependency graph end
+[0.244s] test 1
+[0.244s]     Start 1: copyright
+[0.244s] 
+[0.245s] 1: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/copyright.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_copyright/copyright.txt" "--command" "/home/sln/ros2_humble/install/ament_copyright/bin/ament_copyright" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/copyright.xunit.xml"
+[0.245s] 1: Test timeout computed to be: 200
+[0.991s] 1: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[0.991s] 1:  - /home/sln/ros2_humble/install/ament_copyright/bin/ament_copyright --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/copyright.xunit.xml
+[2.692s] 1: No problems found, checked 2 files
+[2.714s] 1: -- run_test.py: return code 0
+[2.714s] 1: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/copyright.xunit.xml'
+[2.725s] 1/6 Test #1: copyright ........................   Passed    2.55 sec
+[2.725s] test 2
+[2.725s]     Start 2: cppcheck
+[2.725s] 
+[2.725s] 2: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cppcheck.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_cppcheck/cppcheck.txt" "--command" "/home/sln/ros2_humble/install/ament_cppcheck/bin/ament_cppcheck" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cppcheck.xunit.xml"
+[2.726s] 2: Test timeout computed to be: 300
+[3.612s] 2: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[3.614s] 2:  - /home/sln/ros2_humble/install/ament_cppcheck/bin/ament_cppcheck --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cppcheck.xunit.xml
+[5.128s] 2: No problems found
+[5.154s] 2: -- run_test.py: return code 0
+[5.154s] 2: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cppcheck.xunit.xml'
+[5.169s] 2/6 Test #2: cppcheck .........................   Passed    2.44 sec
+[5.170s] test 3
+[5.171s]     Start 3: cpplint
+[5.171s] 
+[5.171s] 3: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cpplint.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_cpplint/cpplint.txt" "--command" "/home/sln/ros2_humble/install/ament_cpplint/bin/ament_cpplint" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cpplint.xunit.xml"
+[5.171s] 3: Test timeout computed to be: 120
+[6.276s] 3: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[6.276s] 3:  - /home/sln/ros2_humble/install/ament_cpplint/bin/ament_cpplint --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cpplint.xunit.xml
+[7.818s] 3: Using '--root=..' argument
+[7.818s] 3: 
+[7.818s] 3: Done processing /home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer/lambda.cpp
+[7.818s] 3: 
+[7.818s] 3: Done processing /home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer/member_function.cpp
+[7.819s] 3: 
+[7.819s] 3: No problems found
+[7.832s] 3: -- run_test.py: return code 0
+[7.833s] 3: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/cpplint.xunit.xml'
+[7.843s] 3/6 Test #3: cpplint ..........................   Passed    2.67 sec
+[7.843s] test 4
+[7.844s]     Start 4: lint_cmake
+[7.844s] 
+[7.844s] 4: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/lint_cmake.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_lint_cmake/lint_cmake.txt" "--command" "/home/sln/ros2_humble/install/ament_lint_cmake/bin/ament_lint_cmake" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/lint_cmake.xunit.xml"
+[7.844s] 4: Test timeout computed to be: 60
+[8.479s] 4: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[8.479s] 4:  - /home/sln/ros2_humble/install/ament_lint_cmake/bin/ament_lint_cmake --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/lint_cmake.xunit.xml
+[9.974s] 4: 
+[9.974s] 4: No problems found
+[9.994s] 4: -- run_test.py: return code 0
+[9.995s] 4: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/lint_cmake.xunit.xml'
+[10.011s] 4/6 Test #4: lint_cmake .......................   Passed    2.17 sec
+[10.011s] test 5
+[10.012s]     Start 5: uncrustify
+[10.012s] 
+[10.012s] 5: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_uncrustify/uncrustify.txt" "--command" "/home/sln/ros2_humble/install/ament_uncrustify/bin/ament_uncrustify" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml"
+[10.012s] 5: Test timeout computed to be: 60
+[11.106s] 5: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[11.106s] 5:  - /home/sln/ros2_humble/install/ament_uncrustify/bin/ament_uncrustify --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml
+[12.622s] 5: No code style divergence in file 'lambda.cpp'
+[12.622s] 5: 
+[12.623s] 5: No code style divergence in file 'member_function.cpp'
+[12.623s] 5: 
+[12.623s] 5: No problems found
+[12.639s] 5: -- run_test.py: return code 0
+[12.640s] 5: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/uncrustify.xunit.xml'
+[12.655s] 5/6 Test #5: uncrustify .......................   Passed    2.64 sec
+[12.655s] test 6
+[12.656s]     Start 6: xmllint
+[12.656s] 
+[12.656s] 6: Test command: /usr/bin/python3.8 "-u" "/home/sln/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/xmllint.xunit.xml" "--package-name" "examples_rclcpp_minimal_timer" "--output-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/ament_xmllint/xmllint.txt" "--command" "/home/sln/ros2_humble/install/ament_xmllint/bin/ament_xmllint" "--xunit-file" "/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/xmllint.xunit.xml"
+[12.656s] 6: Test timeout computed to be: 60
+[13.758s] 6: -- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/timers/minimal_timer':
+[13.758s] 6:  - /home/sln/ros2_humble/install/ament_xmllint/bin/ament_xmllint --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/xmllint.xunit.xml
+[15.454s] 6: File 'package.xml' is valid
+[15.454s] 6: 
+[15.455s] 6: No problems found
+[15.475s] 6: -- run_test.py: return code 0
+[15.476s] 6: -- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer/test_results/examples_rclcpp_minimal_timer/xmllint.xunit.xml'
+[15.490s] 6/6 Test #6: xmllint ..........................   Passed    2.83 sec
+[15.490s] 
+[15.491s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 6
+[15.491s] 
+[15.491s] Label Time Summary:
+[15.491s] copyright     =   2.55 sec*proc (1 test)
+[15.491s] cppcheck      =   2.44 sec*proc (1 test)
+[15.492s] cpplint       =   2.67 sec*proc (1 test)
+[15.492s] lint_cmake    =   2.17 sec*proc (1 test)
+[15.492s] linter        =  15.31 sec*proc (6 tests)
+[15.492s] uncrustify    =   2.64 sec*proc (1 test)
+[15.493s] xmllint       =   2.83 sec*proc (1 test)
+[15.493s] 
+[15.493s] Total Test time (real) =  15.32 sec
+[15.635s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_timer' returned '0': AMENT_PREFIX_PATH=/home/sln/beginner_tutorials/install/examples_rclcpp_minimal_timer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sln/beginner_tutorials/install/examples_rclcpp_minimal_timer:${CMAKE_PREFIX_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

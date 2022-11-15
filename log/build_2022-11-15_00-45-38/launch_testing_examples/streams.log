@@ -1,0 +1,48 @@
+[4.250s] Invoking command in '/home/sln/beginner_tutorials/build/launch_testing_examples': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/launch_testing_examples/build
+[5.541s] running develop
+[5.802s] Removing /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch-testing-examples.egg-link (link to .)
+[5.827s] Invoked command in '/home/sln/beginner_tutorials/build/launch_testing_examples' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/launch_testing_examples/build
+[5.830s] Invoking command in '/home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/sln/beginner_tutorials/build/launch_testing_examples/build install --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --record /home/sln/beginner_tutorials/build/launch_testing_examples/install.log --single-version-externally-managed
+[6.658s] running egg_info
+[6.659s] writing ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/PKG-INFO
+[6.659s] writing dependency_links to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/dependency_links.txt
+[6.659s] writing entry points to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/entry_points.txt
+[6.659s] writing requirements to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/requires.txt
+[6.660s] writing top-level names to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/top_level.txt
+[6.710s] reading manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[6.711s] writing manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[6.711s] running build
+[6.712s] running build_py
+[6.712s] creating /home/sln/beginner_tutorials/build/launch_testing_examples/build
+[6.712s] creating /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib
+[6.712s] creating /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.713s] copying launch_testing_examples/hello_world_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.713s] copying launch_testing_examples/check_msgs_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.713s] copying launch_testing_examples/record_rosbag_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.716s] copying launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.717s] copying launch_testing_examples/__init__.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.717s] copying launch_testing_examples/check_node_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.717s] copying launch_testing_examples/set_param_launch_test.py -> /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples
+[6.717s] running install
+[6.718s] running install_lib
+[6.718s] creating /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.719s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/hello_world_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.719s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/check_msgs_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.720s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/record_rosbag_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.720s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.720s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/__init__.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.720s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/check_node_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.721s] copying /home/sln/beginner_tutorials/build/launch_testing_examples/build/lib/launch_testing_examples/set_param_launch_test.py -> /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples
+[6.721s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/hello_world_launch_test.py to hello_world_launch_test.cpython-38.pyc
+[6.722s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/check_msgs_launch_test.py to check_msgs_launch_test.cpython-38.pyc
+[6.722s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/record_rosbag_launch_test.py to record_rosbag_launch_test.cpython-38.pyc
+[6.723s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/check_multiple_nodes_launch_test.py to check_multiple_nodes_launch_test.cpython-38.pyc
+[6.724s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/__init__.py to __init__.cpython-38.pyc
+[6.724s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/check_node_launch_test.py to check_node_launch_test.cpython-38.pyc
+[6.724s] byte-compiling /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples/set_param_launch_test.py to set_param_launch_test.cpython-38.pyc
+[6.725s] running install_data
+[6.725s] running install_egg_info
+[6.729s] Copying ../../../../build/launch_testing_examples/launch_testing_examples.egg-info to /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch_testing_examples-0.15.1-py3.8.egg-info
+[6.730s] running install_scripts
+[6.763s] writing list of installed files to '/home/sln/beginner_tutorials/build/launch_testing_examples/install.log'
+[6.791s] Invoked command in '/home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/sln/beginner_tutorials/build/launch_testing_examples/build install --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --record /home/sln/beginner_tutorials/build/launch_testing_examples/install.log --single-version-externally-managed

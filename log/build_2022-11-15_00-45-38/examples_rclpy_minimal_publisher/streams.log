@@ -1,0 +1,42 @@
+[6.304s] Invoking command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build
+[7.286s] running develop
+[7.566s] Removing /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples-rclpy-minimal-publisher.egg-link (link to .)
+[8.815s] Invoked command in '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher --uninstall --editable --build-directory /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build
+[8.818s] Invoking command in '/home/sln/beginner_tutorials/src/examples/rclpy/topics/minimal_publisher': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed
+[9.955s] running egg_info
+[9.957s] writing ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/PKG-INFO
+[9.958s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/dependency_links.txt
+[9.958s] writing entry points to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/entry_points.txt
+[9.959s] writing requirements to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/requires.txt
+[9.959s] writing top-level names to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/top_level.txt
+[10.040s] reading manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[10.041s] writing manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[10.042s] running build
+[10.042s] running build_py
+[10.043s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build
+[10.043s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib
+[10.043s] creating /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[10.044s] copying examples_rclpy_minimal_publisher/publisher_member_function.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[10.044s] copying examples_rclpy_minimal_publisher/publisher_old_school.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[10.044s] copying examples_rclpy_minimal_publisher/__init__.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[10.045s] copying examples_rclpy_minimal_publisher/publisher_local_function.py -> /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher
+[10.045s] running install
+[10.051s] running install_lib
+[10.053s] creating /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher
+[10.053s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_member_function.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher
+[10.053s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_old_school.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher
+[10.054s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/__init__.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher
+[10.054s] copying /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build/lib/examples_rclpy_minimal_publisher/publisher_local_function.py -> /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher
+[10.059s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[10.061s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher/publisher_old_school.py to publisher_old_school.cpython-38.pyc
+[10.062s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher/__init__.py to __init__.cpython-38.pyc
+[10.063s] byte-compiling /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher/publisher_local_function.py to publisher_local_function.cpython-38.pyc
+[10.064s] running install_data
+[10.065s] running install_egg_info
+[10.072s] Copying ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages/examples_rclpy_minimal_publisher-0.15.1-py3.8.egg-info
+[10.074s] running install_scripts
+[10.124s] Installing publisher_local_function script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[10.125s] Installing publisher_member_function script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[10.125s] Installing publisher_old_school script to /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[10.126s] writing list of installed files to '/home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/install.log'
+[10.172s] Invoked command in '/home/sln/beginner_tutorials/src/examples/rclpy/topics/minimal_publisher' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/build install --prefix /home/sln/beginner_tutorials/install/examples_rclpy_minimal_publisher --record /home/sln/beginner_tutorials/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed

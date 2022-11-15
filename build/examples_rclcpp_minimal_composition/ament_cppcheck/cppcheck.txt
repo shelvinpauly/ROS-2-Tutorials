@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/home/sln/beginner_tutorials/src/examples/rclcpp/composition/minimal_composition':
+ - /home/sln/ros2_humble/install/ament_cppcheck/bin/ament_cppcheck --xunit-file /home/sln/beginner_tutorials/build/examples_rclcpp_minimal_composition/test_results/examples_rclcpp_minimal_composition/cppcheck.xunit.xml --include_dirs /home/sln/beginner_tutorials/src/examples/rclcpp/composition/minimal_composition/include
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_composition/test_results/examples_rclcpp_minimal_composition/cppcheck.xunit.xml'

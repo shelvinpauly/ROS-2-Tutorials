@@ -1,0 +1,27 @@
+[1.453s] Invoking command in '/home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples': AMENT_PREFIX_PATH=/home/sln/beginner_tutorials/install/launch_testing_examples:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/sln/beginner_tutorials/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/sln/beginner_tutorials/build/launch_testing_examples/.pytest_cache PYTHONPATH=/home/sln/beginner_tutorials/build/launch_testing_examples:/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[3.371s] [1m============================= test session starts ==============================[0m
+[3.371s] platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+[3.382s] cachedir: /home/sln/beginner_tutorials/build/launch_testing_examples/.pytest_cache
+[3.382s] rootdir: /home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples
+[3.382s] plugins: launch-testing-ros-0.19.3, launch-pytest-1.0.3, launch-testing-1.0.3, ament-xmllint-0.12.4, ament-pep257-0.12.4, ament-mypy-0.12.4, ament-flake8-0.12.4, ament-copyright-0.12.4, ament-lint-0.12.4, rerunfailures-8.0, repeat-0.9.1, timeout-1.3.3, cov-2.8.1, mock-1.10.4, colcon-core-0.10.0
+[3.744s] [1mcollecting ... [0m[1m
+[3.744s] collected 9 items                                                              [0m
+[3.744s] 
+[5.969s] launch_testing_examples/check_msgs_launch_test.py [32m.[0m[36m                      [ 11%][0m
+[9.950s] launch_testing_examples/check_multiple_nodes_launch_test.py [32m.[0m[36m            [ 22%][0m
+[15.379s] launch_testing_examples/check_node_launch_test.py [32m.[0m[36m                      [ 33%][0m
+[15.402s] launch_testing_examples/hello_world_launch_test.py [32m.[0m[36m                     [ 44%][0m
+[18.755s] launch_testing_examples/record_rosbag_launch_test.py [32m.[0m[36m                   [ 55%][0m
+[19.205s] launch_testing_examples/set_param_launch_test.py [32m.[0m[36m                       [ 66%][0m
+[20.180s] test/test_copyright.py [32m.[0m[36m                                                 [ 77%][0m
+[20.430s] test/test_flake8.py [32m.[0m[36m                                                    [ 88%][0m
+[20.467s] test/test_pep257.py [32m.[0m[36m                                                    [100%][0m
+[20.467s] 
+[20.467s] [33m=============================== warnings summary ===============================[0m
+[20.467s] /usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[20.467s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[20.467s] 
+[20.468s] -- Docs: https://docs.pytest.org/en/latest/warnings.html
+[20.468s] - generated xml file: /home/sln/beginner_tutorials/build/launch_testing_examples/pytest.xml -
+[20.468s] [33m[1m==================== 9 passed, 1 warnings in 17.10 seconds =====================[0m
+[20.660s] Invoked command in '/home/sln/beginner_tutorials/src/examples/launch_testing/launch_testing_examples' returned '0': AMENT_PREFIX_PATH=/home/sln/beginner_tutorials/install/launch_testing_examples:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/sln/beginner_tutorials/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/sln/beginner_tutorials/build/launch_testing_examples/.pytest_cache PYTHONPATH=/home/sln/beginner_tutorials/build/launch_testing_examples:/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

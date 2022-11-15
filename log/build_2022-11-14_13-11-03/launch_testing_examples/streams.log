@@ -1,0 +1,24 @@
+[3.593s] Invoking command in '/home/sln/beginner_tutorials/build/launch_testing_examples': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --editable --build-directory /home/sln/beginner_tutorials/build/launch_testing_examples/build --no-deps install_data --install-dir /home/sln/beginner_tutorials/install/launch_testing_examples
+[4.626s] running develop
+[4.904s] running egg_info
+[4.905s] creating launch_testing_examples.egg-info
+[4.905s] writing launch_testing_examples.egg-info/PKG-INFO
+[4.905s] writing dependency_links to launch_testing_examples.egg-info/dependency_links.txt
+[4.905s] writing entry points to launch_testing_examples.egg-info/entry_points.txt
+[4.905s] writing requirements to launch_testing_examples.egg-info/requires.txt
+[4.905s] writing top-level names to launch_testing_examples.egg-info/top_level.txt
+[4.905s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[4.949s] reading manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[4.949s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[4.955s] running build_ext
+[4.956s] Creating /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/site.py
+[4.960s] Creating /home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages/launch-testing-examples.egg-link (link to .)
+[4.961s] 
+[4.961s] Installed /home/sln/beginner_tutorials/build/launch_testing_examples
+[4.961s] running install_data
+[4.961s] creating /home/sln/beginner_tutorials/install/launch_testing_examples/share/ament_index
+[4.961s] creating /home/sln/beginner_tutorials/install/launch_testing_examples/share/ament_index/resource_index
+[4.961s] creating /home/sln/beginner_tutorials/install/launch_testing_examples/share/ament_index/resource_index/packages
+[4.962s] copying resource/launch_testing_examples -> /home/sln/beginner_tutorials/install/launch_testing_examples/share/ament_index/resource_index/packages
+[4.962s] copying package.xml -> /home/sln/beginner_tutorials/install/launch_testing_examples/share/launch_testing_examples
+[4.997s] Invoked command in '/home/sln/beginner_tutorials/build/launch_testing_examples' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/launch_testing_examples/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/sln/beginner_tutorials/install/launch_testing_examples --editable --build-directory /home/sln/beginner_tutorials/build/launch_testing_examples/build --no-deps install_data --install-dir /home/sln/beginner_tutorials/install/launch_testing_examples

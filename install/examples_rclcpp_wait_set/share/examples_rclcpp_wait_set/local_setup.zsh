@@ -1,0 +1,1 @@
+/home/sln/beginner_tutorials/build/examples_rclcpp_wait_set/ament_cmake_environment_hooks/local_setup.zsh

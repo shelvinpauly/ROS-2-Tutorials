@@ -1,0 +1,48 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.3 (/home/sln/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.4 (/home/sln/ros2_humble/install/ament_lint_auto/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sln/beginner_tutorials/src/my_package/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sln/beginner_tutorials/src/my_package/build/my_package
+[35m[1mScanning dependencies of target my_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable my_node[0m
+[100%] Built target my_node
+-- Install configuration: ""
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/lib/my_package/my_node
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/environment/ament_prefix_path.sh
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/environment/path.sh
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/environment/path.dsv
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/local_setup.bash
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/local_setup.sh
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/local_setup.zsh
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/local_setup.dsv
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/package.dsv
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/ament_index/resource_index/packages/my_package
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+-- Installing: /home/sln/beginner_tutorials/src/my_package/install/my_package/share/my_package/package.xml

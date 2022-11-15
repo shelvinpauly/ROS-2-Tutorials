@@ -1,0 +1,1 @@
+/home/sln/beginner_tutorials/build/examples_rclcpp_minimal_service/ament_cmake_core/examples_rclcpp_minimal_serviceConfig.cmake
