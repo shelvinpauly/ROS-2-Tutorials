@@ -1,0 +1,41 @@
+[2.360s] Invoking command in '/home/sln/beginner_tutorials/src/py_srvcli': PYTHONPATH=/home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/sln/beginner_tutorials/build/py_srvcli/build install --prefix /home/sln/beginner_tutorials/install/py_srvcli --record /home/sln/beginner_tutorials/build/py_srvcli/install.log --single-version-externally-managed
+[3.197s] running egg_info
+[3.197s] creating ../../build/py_srvcli/py_srvcli.egg-info
+[3.197s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[3.198s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[3.198s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[3.198s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[3.198s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[3.199s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.249s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.250s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.251s] running build
+[3.251s] running build_py
+[3.251s] creating /home/sln/beginner_tutorials/build/py_srvcli/build
+[3.251s] creating /home/sln/beginner_tutorials/build/py_srvcli/build/lib
+[3.251s] creating /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli
+[3.252s] copying py_srvcli/service_member_function.py -> /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli
+[3.252s] copying py_srvcli/client_member_function.py -> /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli
+[3.252s] copying py_srvcli/__init__.py -> /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli
+[3.252s] running install
+[3.257s] running install_lib
+[3.259s] creating /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[3.259s] copying /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[3.260s] copying /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli/client_member_function.py -> /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[3.260s] copying /home/sln/beginner_tutorials/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[3.263s] byte-compiling /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-38.pyc
+[3.264s] byte-compiling /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/client_member_function.py to client_member_function.cpython-38.pyc
+[3.265s] byte-compiling /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/__init__.py to __init__.cpython-38.pyc
+[3.265s] running install_data
+[3.266s] creating /home/sln/beginner_tutorials/install/py_srvcli/share/ament_index
+[3.266s] creating /home/sln/beginner_tutorials/install/py_srvcli/share/ament_index/resource_index
+[3.266s] creating /home/sln/beginner_tutorials/install/py_srvcli/share/ament_index/resource_index/packages
+[3.266s] copying resource/py_srvcli -> /home/sln/beginner_tutorials/install/py_srvcli/share/ament_index/resource_index/packages
+[3.266s] copying package.xml -> /home/sln/beginner_tutorials/install/py_srvcli/share/py_srvcli
+[3.267s] running install_egg_info
+[3.271s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[3.272s] running install_scripts
+[3.312s] Installing client script to /home/sln/beginner_tutorials/install/py_srvcli/lib/py_srvcli
+[3.312s] Installing service script to /home/sln/beginner_tutorials/install/py_srvcli/lib/py_srvcli
+[3.312s] writing list of installed files to '/home/sln/beginner_tutorials/build/py_srvcli/install.log'
+[3.344s] Invoked command in '/home/sln/beginner_tutorials/src/py_srvcli' returned '0': PYTHONPATH=/home/sln/beginner_tutorials/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/sln/beginner_tutorials/build/py_srvcli/build install --prefix /home/sln/beginner_tutorials/install/py_srvcli --record /home/sln/beginner_tutorials/build/py_srvcli/install.log --single-version-externally-managed

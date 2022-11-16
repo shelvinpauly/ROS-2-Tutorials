@@ -1,2 +1,0 @@
-Done processing src/publisher_member_function.cpp
-Done processing src/subscriber_member_function.cpp
