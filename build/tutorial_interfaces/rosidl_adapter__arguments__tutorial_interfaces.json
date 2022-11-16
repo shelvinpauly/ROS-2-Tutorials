@@ -1,8 +1,0 @@
-{
-  "package_name": "tutorial_interfaces",
-  "non_idl_tuples": [
-    "/home/sln/beginner_tutorials/src/tutorial_interfaces:msg/Num.msg",
-    "/home/sln/beginner_tutorials/src/tutorial_interfaces:msg/Sphere.msg",
-    "/home/sln/beginner_tutorials/src/tutorial_interfaces:srv/AddThreeInts.srv"
-  ]
-}
