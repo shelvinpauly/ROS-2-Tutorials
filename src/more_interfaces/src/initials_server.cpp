@@ -13,13 +13,13 @@
 // limitations under the License.
 
 #include "rclcpp/rclcpp.hpp"
-#include "more_interfaces/srv/initials.hpp"
+#include "more_interfaces/srv/my_initials.hpp"
 
 #include<string>
 #include <memory>
 
-void initialize(const std::shared_ptr<more_interfaces::srv::Initials::Request> request,
-          std::shared_ptr<more_interfaces::srv::Initials::Response> response)
+void initialize(const std::shared_ptr<more_interfaces::srv::my_initials::Request> request,
+          std::shared_ptr<more_interfaces::srv::my_initials::Response> response)
 {
   response->initials = request->first + request->last;
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\na: %s" " b: %s",
@@ -33,8 +33,8 @@ int main(int argc, char **argv)
 
   std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("initials_server");
 
-  rclcpp::Service<more_interfaces::srv::Initials>::SharedPtr service =
-    node->create_service<more_interfaces::srv::Initials>("initials", &initialize);
+  rclcpp::Service<more_interfaces::srv::my_initials>::SharedPtr service =
+    node->create_service<more_interfaces::srv::my_initials>("initials", &initialize);
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Ready to generate the initials.");
 

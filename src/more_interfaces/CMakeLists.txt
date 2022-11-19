@@ -9,32 +9,37 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(more_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+
+set(my_files
+  "msg/MyName.msg"
+  "msg/MyInitials.msg"
+  "srv/MyInitials.srv"
+  DEPENDENCIES std_msgs
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/MyName.msg"
-  "srv/Initials.srv"
+  ${my_files}
 )
+
+ament_export_dependencies(rosidl_default_runtime)
 
 add_executable(server src/initials_server.cpp)
 ament_target_dependencies(server
-  rclcpp more_interfaces)
+  "rclcpp"
+  
+)
 
 add_executable(client src/initials_client.cpp)
 ament_target_dependencies(client
-  rclcpp more_interfaces)
+  "rclcpp"
+  
+)
 
 install(TARGETS
   server
   client
   DESTINATION lib/${PROJECT_NAME})
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/MyName.msg"
-  "srv/Initials.srv"
-)
-
-ament_export_dependencies(rosidl_default_runtime)
 
 add_executable(publish_my_initials
   src/publish_my_initials.cpp
@@ -50,11 +55,18 @@ add_executable(subscribe_my_initials
 
 ament_target_dependencies(publish_my_initials
   "rclcpp"
+  std_msgs
 )
 
 ament_target_dependencies(subscribe_my_initials
   "rclcpp"
+  std_msgs
 )
+
+ament_export_dependencies(rosidl_default_runtime)
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(TARGETS publish_my_initials
  DESTINATION lib/${PROJECT_NAME})

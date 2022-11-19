@@ -23,23 +23,23 @@
  * 
  */
 #include "rclcpp/rclcpp.hpp"
-#include "ros2_cpp_pubsub/srv/change_string.hpp"
-#include "ros2_cpp_pubsub/msg/data.hpp"
+#include "more_interfaces/srv/my_initials.hpp"
+#include "more_interfaces/msg/my_initials.hpp"
 
 #include <memory>
 #include <string>
 
 // Typedefs declared by using to improve code readability
 
-using my_data = ros2_cpp_pubsub::msg::Data;
+using my_data = more_interfaces::msg::name;
 using REQUEST = std::shared_ptr
-                <ros2_cpp_pubsub::srv::ChangeString::Request>;
+                <more_interfaces::srv::my_name::Request>;
 using RESPONSE = std::shared_ptr
-                <ros2_cpp_pubsub::srv::ChangeString::Response>;
+                <more_interfaces::srv::my_name::Response>;
 
 using NODE = rclcpp::Node;
 
-using SERVICE = ros2_cpp_pubsub::srv::ChangeString;
+using SERVICE = more_interfaces::srv::my_name;
 
 /**
  * @brief This function manipulates the input from client request
@@ -49,8 +49,8 @@ using SERVICE = ros2_cpp_pubsub::srv::ChangeString;
  */
 void manipulate(const REQUEST request, RESPONSE response) {
     auto input_str = static_cast<std::string>(request->input.c_str());
-    auto add_str = " Manipulated by server";
-    response->output = input_str+add_str;
+    auto add_str = " Name ";
+    response->output = add_str+input_str;
     // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\n %s",
     //             request->input.c_str());
     // RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "sending back response:

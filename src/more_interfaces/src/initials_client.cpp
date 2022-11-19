@@ -13,7 +13,7 @@
 // limitations under the License.
 
 #include "rclcpp/rclcpp.hpp"
-#include "more_interfaces/srv/initials.hpp"
+#include "more_interfaces/srv/my_initials.hpp"
 
 #include<string>
 #include <chrono>
@@ -32,10 +32,10 @@ int main(int argc, char **argv)
   }
 
   std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("initials_client");
-  rclcpp::Client<more_interfaces::srv::Initials>::SharedPtr client =
-    node->create_client<more_interfaces::srv::Initials>("intials_client");
+  rclcpp::Client<more_interfaces::srv::my_initials>::SharedPtr client =
+    node->create_client<more_interfaces::srv::my_initials>("intials_client");
 
-  auto request = std::make_shared<more_interfaces::srv::Initials::Request>();
+  auto request = std::make_shared<more_interfaces::srv::my_initials::Request>();
   request->first = atoll(argv[1]);
   request->last = atoll(argv[2]);
 

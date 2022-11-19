@@ -17,9 +17,7 @@ sudo apt install python3-colcon-common-extensions
 
 ## Clone and Build the package
 - Clone this repository in your ROS2 Workspace /src folder. It should create beginner_tutorials folder in your /src.
-```
-git clone https://github.com/okritvik/beginner_tutorials.git
-```
+
 Make sure that your terminal is sourced
 - Run the below commands:
 ```
@@ -41,13 +39,13 @@ colcon build
 Follow the below instructions to run the simple publisher and subscriber package.
 - Run the publisher
 ```
-ros2 run ros2_cpp_pubsub talker
+ros2 run cpp_pubsub talker
 ```
 - Open a new terminal
 - Source it
 - Run the subscriber
 ```
-ros2 run ros2_cpp_pubsub listener
+ros2 run cpp_pubsub listener
 ```
 
 ## Run Server, Client-Publisher, Subscriber
@@ -76,21 +74,6 @@ ros2 service call /change_strings ros2_cpp_pubsub/srv/ChangeString "{input: 'Hel
 ```
 Note that the server should be running and new terminal should be sourced to execute the above command.
 
-## Run Publisher and Subscriber using Parameters
-Follow the below instructions to run the simple publisher and subscriber that uses parameters to change publishing frequency with different log levels.
-- Run the publisher
-```
-ros2 run ros2_cpp_pubsub param_talker
-```
-This node uses ```/chatter``` topic with a parameter name "frequency" of type double. Default value is 2.0 (Hz). <br>
-To change the frequency, use the below command in a new terminal:
-```
-ros2 param set /param_publisher frequency <frequency value (double)>
-```
-example:
-```
-ros2 param set /param_publisher frequency <5.0>
-```
 - Open a new terminal
 - Source it
 - Run the Subscriber
@@ -100,23 +83,9 @@ ros2 run ros2_cpp_pubsub param_listener
 ### Using a launch file to run the publisher, subscriber
 - Type the below command to launch publisher and subscriber with default frequency (2Hz)
 ```
-ros2 launch ros2_cpp_pubsub pub_sub_launch.yaml
+ros2 launch more_interfaces pub_sub_launch.yaml
 ```
-To set a different frequency, open a new terminal and run the below command:
-```
-ros2 param set /param_publisher frequency <frequency value (double)>
-```
-example:
-```
-ros2 param set /param_publisher frequency <5.0>
-```
-- Type the below command to launch publisher and subscriber with user defined frequency
-```
-ros2 launch ros2_cpp_pubsub pub_sub_launch.yaml frequency:=<user defined frequency (double)>
-```
-example:
-```
-ros2 launch ros2_cpp_pubsub pub_sub_launch.yaml frequency:=501.0
+
 ```
 
 ## Using rqt_console to visualize the log messages:
@@ -124,22 +93,6 @@ Run the below command in a new terminal
 ```
 ros2 run rqt_console rqt_console
 ```
-
-## Issues encountered
-- Some nodes might not output anything in the terminal. Hence, before running the executable node, please run the below two commands
-```
-export RCUTILS_LOGGING_USE_STDOUT=0
-export RCUTILS_LOGGING_BUFFERED_STREAM=0
-```
-- To force the color coding in the terminal to view different log levels, use the below export command in the terminal
-```
-export RCUTILS_COLORIZED_OUTPUT=1  # 1 for forcing color coding
-```
-- The default logger level is INFO. To change it for a node like param_publisher (param_talker executable), run the below command:
-```
-ros2 run ros2_cpp_pubsub param_talker --ros-args --log-level debug
-```
-- I have yet to figure out using --ros-args in the YAML launch file.
 
 
 ## Static Code Analysis
