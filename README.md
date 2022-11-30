@@ -52,7 +52,7 @@ ros2 run cpp_pubsub listener
 Follow the below instructions to run the simple server, client, publisher and subscriber.
 - Run the publisher
 ```
-ros2 run ros2_cpp_pubsub talker
+ros2 run cpp_pubsub talker
 ```
 - Open a new terminal
 - Source it
@@ -92,11 +92,14 @@ ros2 run rqt_console rqt_console
 
 ## Static code analysis
 Navigate to cpp_pubsub package and then run
+```
+cd src/beginner_tutorials/src/cpp_pubsub/
+```
 
 ### Cpplint
 ```
-cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> ../results/cpplint.txt
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> results/cpplint.txt
 ```
 ### Cppcheck
 ```
-cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > ../results/cppcheck.txt
+cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > results/cppcheck.txt
