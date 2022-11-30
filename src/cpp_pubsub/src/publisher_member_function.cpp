@@ -58,27 +58,28 @@ class MinimalPublisher : public rclcpp::Node {
                     " Getting frequency ");
 
     // Setting for custom frequency
-    auto freq_msg = rcl_interfaces::msg::ParameterDescriptor();
-    freq_msg.description = " Custom frequency for publisher";
+    auto new_freq_msg = rcl_interfaces::msg::ParameterDescriptor();
+    new_freq_msg.description = " Custom frequency for publisher";
 
-    this->declare_parameter("freq", 1.0, freq_msg);
-    auto freq = this->get_parameter("freq")
+    this->declare_parameter("new_freq", 1.0, new_freq_msg);
+    auto new_freq = this->get_parameter("new_freq")
                   .get_parameter_value().get<std::float_t>();
 
     // Making checks for the new frequency
-    if (freq < 0) {
-        RCLCPP_ERROR_STREAM(this->get_logger(),
-                  "Publisher frequency cannot be negative!");
-      } else if (freq == 0) {
+    if (new_freq == 0) {
         RCLCPP_WARN_STREAM(this->get_logger(),
                   " Frequency is set to be zero!! ");
          RCLCPP_FATAL_STREAM(this->get_logger(), " Cannot Publish Data ");
+        
+      } else if (new_freq == 0) {
+        RCLCPP_ERROR_STREAM(this->get_logger(),
+                  "Publisher frequency cannot be negative!");
       }
 
     publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
     // Calculate final frequency
     auto time = std::chrono::milliseconds(
-            static_cast<int>(1000/freq));
+            static_cast<int>(1000/new_freq));
 
     timer_ = this->create_wall_timer(
       time, std::bind(&MinimalPublisher::timer_callback, this));

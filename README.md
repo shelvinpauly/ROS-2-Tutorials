@@ -81,7 +81,7 @@ ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=-10.0
 ```
 - Warn and Fatal Log
 ```
-ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=-0.0
+ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=0.0
 ```
 
 ## Using rqt_console to visualize the log messages:
@@ -98,8 +98,8 @@ cd src/beginner_tutorials/src/cpp_pubsub/
 
 ### Cpplint
 ```
-cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> results/cpplint.txt
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> ../results/cpplint.txt
 ```
 ### Cppcheck
 ```
-cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > results/cppcheck.txt
+cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > ../results/cppcheck.txt
