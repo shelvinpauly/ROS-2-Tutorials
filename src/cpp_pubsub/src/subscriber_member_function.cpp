@@ -12,34 +12,56 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+/**
+ * @file publisher_member_function.cpp
+ * @author Shelvin Pauly (spauly@umd.edu)
+ * @brief Custom subscriber node
+ * @version 0.1
+ * @date 2022-11-17
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include <functional>
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
-#include "tutorial_interfaces/msg/num.hpp"                                       // CHANGE
+#include "std_msgs/msg/string.hpp"
+
+#include "rclcpp/logging.hpp"
 
 using std::placeholders::_1;
-
-class MinimalSubscriber : public rclcpp::Node
-{
-public:
+/**
+ * @brief Subscriber Class
+ * 
+ */
+class MinimalSubscriber : public rclcpp::Node {
+ public:
+  /**
+   * @brief Construct a new Minimal Subscriber object
+   * 
+   */
   MinimalSubscriber()
-  : Node("minimal_subscriber")
-  {
-    subscription_ = this->create_subscription<tutorial_interfaces::msg::Num>(    // CHANGE
+  : Node("subscriber") {
+    subscription_ = this->create_subscription<std_msgs::msg::String>(
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
   }
 
-private:
-  void topic_callback(const tutorial_interfaces::msg::Num & msg) const  // CHANGE
-  {
-    RCLCPP_INFO_STREAM(this->get_logger(), "I heard: '" << msg.num << "'");     // CHANGE
+ private:
+  /**
+  * @brief topic callback function to collect data from topic
+  * 
+  * @param msg 
+  */
+  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const {
+    RCLCPP_INFO_STREAM(this->get_logger(),
+    "I hear you, buddy. Keep going ! "<< msg->data);
   }
-  rclcpp::Subscription<tutorial_interfaces::msg::Num>::SharedPtr subscription_;  // CHANGE
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 };
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<MinimalSubscriber>());
   rclcpp::shutdown();

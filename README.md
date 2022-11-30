@@ -24,7 +24,7 @@ Make sure that your terminal is sourced
 cd beginner_tutorials
 rosdep install -i --from-path src --rosdistro humble -y
 cd ../.. # It should take your present working directory to <ROS2_workspace>
-colcon build
+colcon build --packages-select cpp_pubsub
 . install/setup.bash
 ```
 
@@ -48,44 +48,40 @@ ros2 run cpp_pubsub talker
 ros2 run cpp_pubsub listener
 ```
 
-## Run Server, Client-Publisher, Subscriber
+## Run the Custom service change_message
 Follow the below instructions to run the simple server, client, publisher and subscriber.
 - Run the publisher
 ```
-ros2 run ros2_cpp_pubsub server
+ros2 run ros2_cpp_pubsub talker
 ```
 - Open a new terminal
 - Source it
-- Run the client-publisher
+- Call the service /change_message
 ```
-ros2 run ros2_cpp_pubsub client_pub
+ros2 service call /change_message cpp_pubsub/srv/ChangeMyMessage "{in_string: Attention}"
 ```
-- Open a new terminal
-- Source it
-- Run the subscriber
+### Using a launch file to run the publisher, subscriber with and without parameter
+- Type the below command to launch publisher and subscriber with default frequency (5Hz)
 ```
-ros2 run ros2_cpp_pubsub client_sub
+ros2 launch cpp_pubsub my_custom_launch.yaml
 ```
-- These nodes use /server_data as a topic
-- Service name is ```change_string```
-- To check the server response (without running the publisher and subscriber) please use the command in a new terminal:
+- Type the below command to launch publisher and subscriber with new frequency (10Hz)
 ```
-ros2 service call /change_strings ros2_cpp_pubsub/srv/ChangeString "{input: 'Hello world'}"
-```
-Note that the server should be running and new terminal should be sourced to execute the above command.
-
-- Open a new terminal
-- Source it
-- Run the Subscriber
-```
-ros2 run ros2_cpp_pubsub param_listener
-```
-### Using a launch file to run the publisher, subscriber
-- Type the below command to launch publisher and subscriber with default frequency (2Hz)
-```
-ros2 launch more_interfaces pub_sub_launch.yaml
+ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=10.0
 ```
 
+### Logging
+- Debug (At the beginning of publisher)
+```
+ros2 launch cpp_pubsub my_custom_launch.yaml
+```
+- Error Log
+```
+ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=-10.0
+```
+- Warn and Fatal Log
+```
+ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=-0.0
 ```
 
 ## Using rqt_console to visualize the log messages:
@@ -94,14 +90,13 @@ Run the below command in a new terminal
 ros2 run rqt_console rqt_console
 ```
 
+## Static code analysis
+Navigate to cpp_pubsub package and then run
 
-## Static Code Analysis
-### cpplint
-Run the below command from inside the package folder `beginner_tutorials`
+### Cpplint
 ```
-cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> ./results/cpplint.txt
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp &> ../results/cpplint.txt
 ```
-### cppcheck
-Run the below command from the project root folder `beginner_tutorials`
+### Cppcheck
 ```
-cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > ./results/cppcheck.txt
+cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > ../results/cppcheck.txt
