@@ -35,18 +35,24 @@ colcon build --packages-select cpp_pubsub
 . install/setup.bash
 ```
 
-## Run Publisher-Subscriber
+## Broadcasting a tf frame called /talk
 Follow the below instructions to run the simple publisher and subscriber package.
-- Run the publisher
+- Run the publisher, completes the transforamtion between world frame and child frame.
 ```
-ros2 run cpp_pubsub talker
+ros2 run cpp_pubsub static_transform_publisher talk 5.1 2.3 3.3 1 3 2
 ```
 - Open a new terminal
 - Source it
-- Run the subscriber
+- We can now check the static transform being published
 ```
-ros2 run cpp_pubsub listener
+ros2 run tf2_ros tf2_echo world talk
 ```
+- Saving the frames being broadcasted for 5 seconds
+```
+ros2 run tf2_tools view_frames
+```
+
+
 
 ## Run the Custom service change_message
 Follow the below instructions to run the simple server, client, publisher and subscriber.

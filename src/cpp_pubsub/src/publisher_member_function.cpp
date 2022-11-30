@@ -35,6 +35,11 @@
 
 #include "rclcpp/logging.hpp"
 
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/static_transform_broadcaster.h"
+
+#include "geometry_msgs/msg/transform_stamped.hpp"
+
 using namespace std::chrono_literals;
 
 /* This example creates a subclass of Node and uses std::bind() to register a
@@ -50,62 +55,19 @@ class MinimalPublisher : public rclcpp::Node {
    * @brief Construct a new Minimal Publisher object
    * 
    */
-  MinimalPublisher()
-  : Node("publisher"), count_(0) {
-    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
-
-    RCLCPP_DEBUG_STREAM(this->get_logger(),
-                    " Getting frequency ");
-
-    // Setting for custom frequency
-    auto new_freq_msg = rcl_interfaces::msg::ParameterDescriptor();
-    new_freq_msg.description = " Custom frequency for publisher";
-
-    this->declare_parameter("new_freq", 1.0, new_freq_msg);
-    auto new_freq = this->get_parameter("new_freq")
-                  .get_parameter_value().get<std::float_t>();
-
-    // Making checks for the new frequency
-    if (new_freq == 0) {
-        RCLCPP_WARN_STREAM(this->get_logger(),
-                  " Frequency is set to be zero!! ");
-         RCLCPP_FATAL_STREAM(this->get_logger(), " Cannot Publish Data ");
-        
-      } else if (new_freq == 0) {
-        RCLCPP_ERROR_STREAM(this->get_logger(),
-                  "Publisher frequency cannot be negative!");
-      }
+  explicit MinimalPublisher(char * transformation[])
+  : Node("static_transform_publisher"), count_(0) {
 
     publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
-    // Calculate final frequency
-    auto time = std::chrono::milliseconds(
-            static_cast<int>(1000/new_freq));
 
     timer_ = this->create_wall_timer(
-      time, std::bind(&MinimalPublisher::timer_callback, this));
+      1000ms, std::bind(&MinimalPublisher::timer_callback, this));
 
-    auto serviceCallbackPtr = std::bind(&MinimalPublisher::change_message,
-                    this, std::placeholders::_1, std::placeholders::_2);
+    tf_static_broadcaster_ = std::make_shared
+          <tf2_ros::StaticTransformBroadcaster>(this);
 
-    service_ = create_service<cpp_pubsub::srv::ChangeMyMessage>(
-                    "change_message", serviceCallbackPtr);
-  }
-
-  /**
-   * @brief Implementing the service change message
-   * 
-   * @param request 
-   * @param response 
-   */
-  void change_message(
-    const std::shared_ptr<cpp_pubsub::srv::ChangeMyMessage::Request> request,
-    std::shared_ptr<cpp_pubsub::srv::ChangeMyMessage::Response> response) {
-    response->out_string = request->in_string +
-             " I apologize but we need to change the message!!!";
-    RCLCPP_INFO_STREAM(this->get_logger(),
-                  "Request message: "<< request->in_string);
-    RCLCPP_INFO_STREAM(this->get_logger(),
-                  "Response message: "<< response->out_string);
+    // Publish static transforms once at startup
+    this->make_transforms(transformation);
   }
 
  private:
@@ -120,15 +82,72 @@ class MinimalPublisher : public rclcpp::Node {
     RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << message.data);
     publisher_->publish(message);
   }
+
+  /**
+   * @brief Completing the transformation
+   * 
+   * @param transformation 
+   */
+  void make_transforms(char * transformation[])
+  {
+    geometry_msgs::msg::TransformStamped t;
+
+    t.header.stamp = this->get_clock()->now();
+    t.header.frame_id = "world";
+    t.child_frame_id = transformation[1];
+
+    t.transform.translation.x = atof(transformation[2]);
+    t.transform.translation.y = atof(transformation[3]);
+    t.transform.translation.z = atof(transformation[4]);
+    tf2::Quaternion q;
+    q.setRPY(
+      atof(transformation[5]),
+      atof(transformation[6]),
+      atof(transformation[7]));
+    t.transform.rotation.x = q.x();
+    t.transform.rotation.y = q.y();
+    t.transform.rotation.z = q.z();
+    t.transform.rotation.w = q.w();
+
+    tf_static_broadcaster_->sendTransform(t);
+  }
+
   rclcpp::TimerBase::SharedPtr timer_;
+  std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_static_broadcaster_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-  rclcpp::Service<cpp_pubsub::srv::ChangeMyMessage>::SharedPtr service_;
   size_t count_;
 };
 
-int main(int argc, char * argv[]) {
+/**
+ * @brief Main function
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
+int main(int argc, char * argv[])
+{
+  auto logger = rclcpp::get_logger("logger");
+
+  // Obtain parameters from command line arguments
+  if (argc != 8) {
+    RCLCPP_INFO(
+      logger, "Invalid number of parameters\nusage: "
+      "$ ros2 runpp c_pubsub static_transform_publish "
+      "child_frame_name x y z roll pitch yaw");
+    return 1;
+  }
+
+  // As the parent frame of the transform is `world`, it is
+  // necessary to check that the frame name passed is different
+  if (strcmp(argv[1], "world") == 0) {
+    RCLCPP_INFO(logger, "Your static turtle name cannot be 'world'");
+    return 2;
+  }
+
+  // Pass parameters and initialize node
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MinimalPublisher>());
+  rclcpp::spin(std::make_shared<MinimalPublisher>(argv));
   rclcpp::shutdown();
   return 0;
 }
