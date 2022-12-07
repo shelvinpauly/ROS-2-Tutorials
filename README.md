@@ -35,23 +35,45 @@ colcon build --packages-select cpp_pubsub
 . install/setup.bash
 ```
 
-## Broadcasting a tf frame called /talk
+## Broadcasting a tf frame called /child
 Follow the below instructions to run the simple publisher and subscriber package.
 - Run the publisher, completes the transforamtion between world frame and child frame.
 ```
-ros2 run cpp_pubsub static_transform_publisher talk 5.1 2.3 3.3 1 3 2
+ros2 run cpp_pubsub static_transform_publisher child 5.1 2.3 3.3 1 3 2
 ```
 - Open a new terminal
 - Source it
 - We can now check the static transform being published
 ```
-ros2 run tf2_ros tf2_echo world talk
+ros2 run tf2_ros tf2_echo world child
 ```
 - Saving the frames being broadcasted for 5 seconds
 ```
 ros2 run tf2_tools view_frames
 ```
 
+### ROS Bag Usage
+- Recording data published on a topic using ROS Bag
+Here, I uses a launch file in python to record all topics with a param to enable/disable recording.
+Follow the below instructions. To switch off the recording you can set the flag to "False"
+- Run the launch file.
+```
+ros2 launch cpp_pubsub launch_bag.py record_all:=True
+```
+- Wait for 15 seconds, and then temrinate it using Ctrl + C. You can view the information about the bag using
+```
+ros2 bag info my_bag/
+```
+- Terminate all nodes.
+- Run the listener node
+```
+ros2 run cpp_pubsub listener
+```
+- Use ros2 bag to play the bag recorded node
+```
+ros2 bag play my_bag
+```
+You will see messages from the bag being played.
 
 
 ## Run the Custom service change_message
@@ -76,24 +98,9 @@ ros2 launch cpp_pubsub my_custom_launch.yaml
 ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=10.0
 ```
 
-### Logging
-- Debug (At the beginning of publisher)
+### Testing
 ```
-ros2 launch cpp_pubsub my_custom_launch.yaml
-```
-- Error Log
-```
-ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=-10.0
-```
-- Warn and Fatal Log
-```
-ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=0.0
-```
-
-## Using rqt_console to visualize the log messages:
-Run the below command in a new terminal
-```
-ros2 run rqt_console rqt_console
+colcon test --event-handlers console_direct+ --packages-select cpp_pubsub
 ```
 
 ## Static code analysis

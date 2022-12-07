@@ -1,4 +1,0 @@
-string first
-string last
----
-string[<=4] inits

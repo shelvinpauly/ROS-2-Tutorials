@@ -22,41 +22,25 @@
  * @copyright Copyright (c) 2022
  * 
  */
-
 #include <functional>
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-#include "rclcpp/logging.hpp"
-
 using std::placeholders::_1;
-/**
- * @brief Subscriber Class
- * 
- */
+
 class MinimalSubscriber : public rclcpp::Node {
  public:
-  /**
-   * @brief Construct a new Minimal Subscriber object
-   * 
-   */
   MinimalSubscriber()
-  : Node("subscriber") {
+  : Node("minimal_subscriber") {
     subscription_ = this->create_subscription<std_msgs::msg::String>(
-      "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+      "mytopic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
   }
 
  private:
-  /**
-  * @brief topic callback function to collect data from topic
-  * 
-  * @param msg 
-  */
-  void topic_callback(const std_msgs::msg::String::SharedPtr msg) const {
-    RCLCPP_INFO_STREAM(this->get_logger(),
-    "I hear you, buddy. Keep going ! "<< msg->data);
+  void topic_callback(const std_msgs::msg::String & msg) const {
+    RCLCPP_INFO(this->get_logger(), "Shelvin heard: '%s'", msg.data.c_str());
   }
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 };
