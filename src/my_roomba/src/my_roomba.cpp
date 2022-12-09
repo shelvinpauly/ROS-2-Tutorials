@@ -46,10 +46,11 @@ class AutoRoomba : public rclcpp::Node {
     AutoRoomba() :
         Node("roomba") {
             // Initialize the publisher and subscriber
-            auto callback = std::bind(&AutoRoomba::callback, this, _1);
+            auto callback = std::bind(&AutoRoomba::callback_scan, this, _1);
             sub_lidar = this->create_subscription<sensor_msgs::msg::LaserScan>
                                         ("scan", 10, callback);
-            pub_velocity = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+            pub_velocity = this->create_publisher
+            <geometry_msgs::msg::Twist>("cmd_vel", 10);
         }
 
  private:
@@ -58,7 +59,7 @@ class AutoRoomba : public rclcpp::Node {
   * 
   * @param msg 
   */
-    void callback(const sensor_msgs::msg::LaserScan& msg) {
+    void callback_scan(const sensor_msgs::msg::LaserScan& msg) {
         if (msg.header.stamp.sec == 0) {
             return;
         }
