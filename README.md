@@ -24,7 +24,7 @@ Make sure that your terminal is sourced
 cd beginner_tutorials
 rosdep install -i --from-path src --rosdistro humble -y
 cd ../.. # It should take your present working directory to <ROS2_workspace>
-colcon build --packages-select cpp_pubsub
+colcon build --packages-select my_roomba
 . install/setup.bash
 ```
 
@@ -35,78 +35,26 @@ colcon build --packages-select cpp_pubsub
 . install/setup.bash
 ```
 
-## Broadcasting a tf frame called /child
-Follow the below instructions to run the simple publisher and subscriber package.
-- Run the publisher, completes the transforamtion between world frame and child frame.
+## Set TB3 model to burger and path
 ```
-ros2 run cpp_pubsub static_transform_publisher child 5.1 2.3 3.3 1 3 2
-```
-- Open a new terminal
-- Source it
-- We can now check the static transform being published
-```
-ros2 run tf2_ros tf2_echo world child
-```
-- Saving the frames being broadcasted for 5 seconds
-```
-ros2 run tf2_tools view_frames
+export GAZEBO_MODEL_PATH=`ros2 pkg prefix turtlebot3_gazebo`/share/turtlebot3_gazebo/models/
+export TURTLEBOT3_MODEL=burger
 ```
 
-### ROS Bag Usage
-- Recording data published on a topic using ROS Bag
-Here, I uses a launch file in python to record all topics with a param to enable/disable recording.
-Follow the below instructions. To switch off the recording you can set the flag to "False"
-- Run the launch file.
+### Launch the file
+- Run the launch file and recording the data in a bag for future use.
 ```
-ros2 launch cpp_pubsub launch_bag.py record_all:=True
+ros2 launch my_roomba roomba_bag.py record:=True
 ```
-- Wait for 15 seconds, and then temrinate it using Ctrl + C. You can view the information about the bag using
+- Wait for 15 seconds, and then temrinate it using Ctrl + C. You can then play the bag using
 ```
-ros2 bag info my_bag/
-```
-- Terminate all nodes.
-- Run the listener node
-```
-ros2 run cpp_pubsub listener
-```
-- Use ros2 bag to play the bag recorded node
-```
-ros2 bag play my_bag
-```
-You will see messages from the bag being played.
-
-
-## Run the Custom service change_message
-Follow the below instructions to run the simple server, client, publisher and subscriber.
-- Run the publisher
-```
-ros2 run cpp_pubsub talker
-```
-- Open a new terminal
-- Source it
-- Call the service /change_message
-```
-ros2 service call /change_message cpp_pubsub/srv/ChangeMyMessage "{in_string: Attention}"
-```
-### Using a launch file to run the publisher, subscriber with and without parameter
-- Type the below command to launch publisher and subscriber with default frequency (5Hz)
-```
-ros2 launch cpp_pubsub my_custom_launch.yaml
-```
-- Type the below command to launch publisher and subscriber with new frequency (10Hz)
-```
-ros2 launch cpp_pubsub my_custom_launch.yaml new_freq:=10.0
-```
-
-### Testing
-```
-colcon test --event-handlers console_direct+ --packages-select cpp_pubsub
+ros2 bag play roomba_bag/
 ```
 
 ## Static code analysis
 Navigate to cpp_pubsub package and then run
 ```
-cd src/beginner_tutorials/src/cpp_pubsub/
+cd src/beginner_tutorials/src/my_roomba/
 ```
 
 ### Cpplint
@@ -116,3 +64,4 @@ cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_orde
 ### Cppcheck
 ```
 cppcheck --enable=all --std=c++17 src/*.cpp --suppress=missingIncludeSystem --suppress=missingInclude --suppress=unmatchedSuppression > ../results/cppcheck.txt
+```
