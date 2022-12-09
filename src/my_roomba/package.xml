@@ -1,22 +1,25 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>bag_recorder_nodes</name>
+  <name>my_roomba</name>
   <version>0.0.0</version>
-  <description>Implementing  a subscriber for ros bag</description>
-  <maintainer email="spauly@umd.edu">shelvin</maintainer>
-  <license>Apache License 2.0</license>
+  <description>Automatic vaccum using turtlebot burger</description>
+  <maintainer email="spauly@umd.edu">sln</maintainer>
+  <license>MIT License</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>example_interfaces</depend>
   <depend>rclcpp</depend>
-  <depend>rosbag2_cpp</depend>
   <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <exec_depend>ros2launch</exec_depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>
